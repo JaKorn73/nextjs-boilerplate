@@ -12,9 +12,9 @@
 - Nainstalovaný a běžící [Docker](https://www.docker.com/)
 
 ```
-docker build . -t tda-nextjs
-docker run -p 8080:80 -v "$(pwd)":/app tda-nextjs
+docker build -t tda-nextjs .
+docker run -p 3000:3000 tda-nextjs
 ```
-Aplikace bude následně přístupná na `http://localhost:8080`
+Aplikace bude následně přístupná na `http://localhost:3000`
 
 ## Odevzdání
